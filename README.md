@@ -1,9 +1,12 @@
 # JC3248W535_AviPlayer_with_Touch_UI
 
 ## Background
-This project was designed to be built into an old wooden box to make a magical video player for a 3 year-old child's favourite program, Bagpuss. The basic version has been working for the last year and is much loved, but simply shows all thirteen episodes in a completely random order. This new project adds touchscreen controls allowing the child to choose which of the  episodes to play.
-![IMG_7142](https://github.com/user-attachments/assets/89ed225c-7882-4991-b9c2-6433fc6eee25)
+This project was designed to be built into an old wooden box to make a magical video player for a 3 year-old child's favourite program, Bagpuss. 
 ![IMG_7144](https://github.com/user-attachments/assets/57fcb7d0-bff6-499d-a523-9ad16d8d49e7)
+
+The basic version has been working for the last year and is much loved, but simply shows all thirteen episodes in a completely random order. This new project adds touchscreen controls allowing the child to choose which of the  episodes to play.
+![IMG_7142](https://github.com/user-attachments/assets/89ed225c-7882-4991-b9c2-6433fc6eee25)
+
 
 
 ## Hardware
