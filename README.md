@@ -81,7 +81,7 @@ These are the problems encountered during development that cost the most time to
 The touch driver included in the ArduinoGFX library does **not** work with the AXS15231B controller on this board. This was the primary motivation for this project. The solution is the [JC3248W535-Driver](https://github.com/me-processware/JC3248W535-Driver) by me-processware, which works correctly out of the box.
 
 ### 2. Big Endian Pixel Flag in cinepak.h
-Without this fix, video colours will appear severely distorted — greens, purples and cyans instead of natural colours. In `cinepak.h` at line 25, enable the Big Endian pixel flag:
+Without this fix, video colours will appear severely distorted — greens, purples and cyans instead of natural colours. If you see disptorted colours, change the commented state of the Big Endian pixel flag in `cinepak.h` at line 25, to  :
 
 ```cpp
 // Change this:
@@ -89,22 +89,17 @@ Without this fix, video colours will appear severely distorted — greens, purpl
 
 // To this:
 #define BIG_ENDIAN_PIXEL
+
+or vice versa.
 ```
 
-This is needed because the canvas frame buffer requires Big Endian pixel format, whereas the legacy direct-to-display driver did not.
-
 ### 3. Canvas vs Direct Display Driver
-The legacy AVI player example writes frames directly to the `Arduino_AXS15231B` display driver. This project uses an `Arduino_Canvas` buffer (required for the QSPI interface), which means:
+This project uses an `Arduino_Canvas` buffer (required for the QSPI interface), which means:
 - All drawing goes to the canvas buffer first
 - `display.flush()` must be called to push the canvas to the physical display
 - `output_buf` must be obtained via `gfx->getFramebuffer()` on the canvas, not the display driver
-- The `avi_draw()` function must call both `draw16bitBeRGBBitmap()` **and** `flush()`:
+- The `avi_draw()` function must call `flush()` to display the contents of the screen buffer.
 
-```cpp
-#ifdef CANVAS
-    gfx->draw16bitBeRGBBitmap(x, y, output_buf, avi_w, avi_h);
-    gfx->flush();
-```
 
 ### 4. setTextSize() Must Be Called Before getTextBounds()
 When centring text on screen, `getTextBounds()` measures text at the **current** text size. If `setTextSize()` is called after `getTextBounds()`, the measurement will be wrong and the text will appear off-centre. Always set the text size first:
