@@ -130,6 +130,10 @@ This project stands on the shoulders of others' generous open source contributio
 - **[Volos Projects](https://www.youtube.com/@VolosProjects)** — YouTube channel that introduced many people (including this author) to ESP32 development
 - **[@moononournation](https://github.com/moononournation)** — Author of the Arduino_GFX library and the AVI player example that forms the foundation of this project
 - **[me-processware](https://github.com/me-processware/JC3248W535-Driver)** — Author of the JC3248W535 touch driver that made this project possible, and whose README documentation sets a high standard
+- **[The Last Outpost Workshop](https://github.com/thelastoutpostworkshop/JC4827W543_avi_player)** - Designed a simple UI operated video player for the JC4827W543 and showed what was possible.
+
+
+
 
 ---
 
