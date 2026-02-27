@@ -2,6 +2,9 @@
 
 ## Background
 This project was designed to be built into an old wooden box to make a magical video player for a 3 year-old child's favourite program, Bagpuss. The basic version has been working for the last year and is much loved, but simply shows all thirteen episodes in a completely random order. This new project adds touchscreen controls allowing the child to choose which of the  episodes to play.
+![IMG_7142](https://github.com/user-attachments/assets/89ed225c-7882-4991-b9c2-6433fc6eee25)
+![IMG_7144](https://github.com/user-attachments/assets/57fcb7d0-bff6-499d-a523-9ad16d8d49e7)
+
 
 ## Hardware
 The JC3248W535 is a great little ESP32-S3 powered board that includes a touch screen, audio amplifier, SD card slot and battery management — all in one self-contained unit at a very reasonable price. Here I describe how I managed to create an AVI player with a touch screen UI using the new JC3248W535-Driver and the ArduinoGFX library. 
