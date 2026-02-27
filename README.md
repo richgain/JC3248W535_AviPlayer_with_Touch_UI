@@ -25,6 +25,8 @@ https://github.com/me-processware/JC3248W535-Driver
 
 
 Settings
+
+
 Under the Arduino/Tools menu, you will need to select the correct settings:
 
 
