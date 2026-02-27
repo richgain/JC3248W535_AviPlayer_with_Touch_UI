@@ -81,7 +81,7 @@ These are the problems encountered during development that cost the most time to
 The touch driver included in the ArduinoGFX library does **not** work with the AXS15231B controller on this board. This was the primary motivation for this project. The solution is the [JC3248W535-Driver](https://github.com/me-processware/JC3248W535-Driver) by me-processware, which works correctly out of the box.
 
 ### 2. Big Endian Pixel Flag in cinepak.h
-Without this fix, video colours will appear severely distorted — greens, purples and cyans instead of natural colours. If you see disptorted colours, change the commented state of the Big Endian pixel flag in `cinepak.h` at line 25, to  :
+Without this fix, video colours will appear severely distorted — greens, purples and cyans instead of natural colours. If you see distorted colours, change the commented/uncommented state of the Big Endian pixel flag in `cinepak.h` at line 25, to  :
 
 ```cpp
 // Change this:
