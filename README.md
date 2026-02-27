@@ -33,7 +33,7 @@ Under the Arduino/Tools menu, you will need to select the correct settings:
 Board:"ESP32S3 Dev Module"
 
 
-Port: "<the correct COM port>"
+Port: "the correct COM port for your board"
 
 
 USB CDC On Boot: "Enabled"
