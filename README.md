@@ -26,12 +26,28 @@ https://github.com/me-processware/JC3248W535-Driver
 
 Settings
 Under the Arduino/Tools menu, you will need to select the correct settings:
+
+
 Board:"ESP32S3 Dev Module"
+
+
 Port: <the correct COM port>
+
+
 USB CDC On Boot: "Enabled"
+
+
 Flash Mode: "QIO 120 MHz"
+
+
 Flash Size: "16MB (128Mb)"
+
+
 Partition Scheme: "16M Flash (3MB APP/9.9MB FATFS)"
+
+
 PSRAM: "OPI PSRAM"
+
+
 
 
