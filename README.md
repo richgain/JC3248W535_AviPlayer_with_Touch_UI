@@ -38,6 +38,7 @@ The following libraries must be installed manually:
 - https://github.com/arionik/avilib
 - https://github.com/esp-arduino-libs/ESP32_JPEG
 - https://github.com/me-processware/JC3248W535-Driver
+- https://github.com/olikraus/u8g2
 
 ---
 
