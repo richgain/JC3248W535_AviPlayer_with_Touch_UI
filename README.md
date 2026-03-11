@@ -67,7 +67,7 @@ You will need to convert your videos using free software to avi files that will 
 ### Conversion Process
 I used a 2-stage video file conversion process. 
 - Step 1. Use the free HandBrake program to scale your source video file to 480 pixels by 320 pixels AND rotate it 90 degrees clockwise.
-- Step 2. Use ffmpeg as decribed by @moononournation to convert to the Cinepak-compatible AVI file.
+- Step 2. Use ffmpeg [as described by](https://github.com/moononournation/aviPlayer) @moononournation to convert to the Cinepak-compatible AVI file.
 
 ### SD Card Setup
 
